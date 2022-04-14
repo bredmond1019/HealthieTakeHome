@@ -18,7 +18,7 @@ This one should be pretty self explanatory -- you just need to run the _prime_nu
 
 The main file that you will need to run is the _animals_eating.py_ file. In this file, I instantiate all of the classes and then show each of the animals eating each of the food items. You can feed the animals either an instance of the class, or the actual class itself, and it will provide the same outcome. As the file is now, the animals are eating instances of the Food class. Feel free to uncomment the section at the bottom to see them eating the actual class as a whole. 
 
-I provided each food class a class attribute called name, as well as an instance attribute called name in case you wanted name the particulat item of food (pizza, puppy chow, etc). Also, you can name the animals if you'd like. 
+I provided each food class a class attribute called name, as well as an instance attribute called name in case you wanted name the particular item of food (pizza, puppy chow, etc). Also, you can name the animals if you'd like. 
 
 
 
