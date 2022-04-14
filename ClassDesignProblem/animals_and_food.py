@@ -20,36 +20,36 @@ class Food:
 class CatFood(Food):
     name = "cat food"
     
-    def __init__(self):
-        Food.__init__(self, name = "cat food")
+    def __init__(self, name = "cat food"):
+        Food.__init__(self, name = name)
 
 
 class DogFood(Food):
     name = "dog food"
     
-    def __init__(self):
-        Food.__init__(self, name = "dog food")
+    def __init__(self, name = "dog food"):
+        Food.__init__(self, name = name)
 
 
 class HumanFood(Food):
     name = "human food"
     
-    def __init__(self):
-        Food.__init__(self, name = "human food")
+    def __init__(self, name = "human food"):
+        Food.__init__(self, name = name)
 
 
 class Milk(Food):
     name = "milk"
 
-    def __init__(self):
-        Food.__init__(self, name = "milk")
+    def __init__(self, name = "milk"):
+        Food.__init__(self, name = name)
 
 
 class Lemons(Food):
     name = "lemons"
 
-    def __init__(self):
-        Food.__init__(self, name = "lemons")
+    def __init__(self, name = "lemons"):
+        Food.__init__(self, name = name)
 
 
 
@@ -98,10 +98,15 @@ class Chicken(Food, Animal):
 
 # These two of top of the food chain in this crew of animals, so just inherit from animal
 class Dog(Animal):
-    def __init__(self):
+    def __init__(self, name = None):
         Animal.__init__(self, noise="bark", foods=[DogFood, CatFood, Chicken, HumanFood])
+        if name:
+            self.name = name
 
 
 class Cat(Animal):
-    def __init__(self):
+    def __init__(self, name = None):
         Animal.__init__(self, noise="meow", foods=[CatFood, Chicken, Milk])
+        if name:
+            self.name = name
+
