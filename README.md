@@ -24,9 +24,9 @@ I provided each food class a class attribute called name, as well as an instance
 
 ### Model Design Problem
 
-I code on a linux machine, so all of the commands are for a linux operating system. They should be similar for a Mac.
+This challenge was really fun. I had to think a bit at first on how to create the models, but then it clicked and made sense. I created a backend API using Flask and GraphQL. I utilized flask's application factory format to allow dynamic configurations for development, testing, and production. Everything is basically done using GraphQL, but I did include a REST API blueprint to easily add enpoints if needed. 
 
-I also created _unittest_ s for the queries you asked for. In the _ModelDesignProblem_ directory, there will be a subdirectory called _tests_. In this file you can see how I formated the queries you asked for as well as the output you should see. 
+I also created _unittest_ s for the queries you asked for. In the _ModelDesignProblem_ directory, there will be a subdirectory called _tests_. In this file you can see how I formated the queries you asked for as well as the output you should see. Instructions on how to run the tests are below in the SETTING UP FLASK section
 
 When I created my own Postgres Database and added the data that way, I was able to get the journal entries to be ordered in decreasing dates, so the newest entries were first. However, in the SQLite database, each time I made a query it restamped the time for the journal entry and they all had the exact same time. Feel free to create a normal postgres database to check it out instead of using the in-memory sequal lite that I provided. Also, I had some trouble testing the dates using the SQLite database, I believe it has something to do with the datetime format being miliseconds off, but I didn't want to spent too much time on that. 
 
@@ -36,6 +36,8 @@ Looking forward to our review!
 
 
 #### Setting Up the Flask Environment
+
+I code on a linux machine, so all of the commands are for a linux operating system. They should be similar for a Mac.
 
 1. Go into the __ModelDesignProblem__ directory
 2. Make sure you have python>=3.6 installed. I was using 3.8 at the time. 
