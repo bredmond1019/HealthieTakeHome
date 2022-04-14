@@ -39,6 +39,8 @@ Looking forward to our review!
 
 I code on a linux machine, so all of the commands are for a linux operating system. They should be similar for a Mac.
 
+Also, in the requirements.txt file, I commented out line 29 -- psycopg. If you are using a _Mac_ , leave it commented out and it should run fine. If you are using Linux, you will probably have to uncomment out line 29. I tested it on both and that is what I had to do. 
+
 1. Go into the __ModelDesignProblem__ directory
 2. Make sure you have python>=3.6 installed. I was using 3.8 at the time.
 3. You'll want to set up a `venv` --> `python3 -m venv healthieVenv`
